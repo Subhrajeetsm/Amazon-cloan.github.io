@@ -1,227 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amazon.org</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: #e3e6e6;
-}
-
-.header {
-  background-color: #131921;
-  color: white;
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  gap: 10px;
-}
-
-.logo {
-  font-size: 24px;
-  color: #ff9900;
-  font-weight: bold;
-}
-
-.logo span {
-  color: white;
-}
-
-.search-input {
-  flex: 1;
-  padding: 8px;
-  border: none;
-}
-
-.search-btn {
-  background-color: #febd69;
-  padding: 8px 12px;
-  border: none;
-}
-
-.nav-links a {
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
-}
-
-.navbar {
-  background-color: #232f3e;
-  display: flex;
-  gap: 15px;
-  padding: 10px 20px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.hero img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.box {
-  background-color: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.box h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.box img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.box a {
-  text-decoration: none;
-  color: #007185;
-  font-weight: bold;
-}
-
-.footer {
-  background-color: #131921;
-  color: white;
-  padding: 30px 20px;
-  margin-top: 40px;
-}
-
-.footer-cols {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footer-cols div {
-  margin: 10px;
-  min-width: 180px;
-}
-
-.footer-cols h4 {
-  margin-bottom: 10px;
-}
-
-.footer-cols p {
-  margin: 5px 0;
-  font-size: 14px;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 13px;
-  color: #999;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="header">
-    <div class="logo">amazon<span>.org</span></div>
-    <input type="text" placeholder="Search Amazon.org" class="search-input"/>
-    <button class="search-btn"><i class="fas fa-search"></i></button>
-    <div class="nav-links">
-      <a href="#">Sign In</a>
-      <a href="#">Orders</a>
-      <a href="#">Cart</a>
-    </div>
-  </header>
+    <script src="script.js"></script>
+    <!--<i class="fa-brands fa-github"></i>-->
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo">
 
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <a href="#">All</a>
-    <a href="#">Today's Deals</a>
-    <a href="#">Mobiles</a>
-    <a href="#">Electronics</a>
-    <a href="#">Customer Service</a>
-    <a href="#">Fashion</a>
-    <a href="#">Prime</a>
-  </nav>
+                </div>
 
-  <!-- Hero Banner -->
-  <section class="hero">
-    <img src="https://m.media-amazon.com/images/I/71U-Q+N7PXL._SX3000_.jpg" alt="Main banner"/>
-  </section>
+                <div class="nav-address">
+                    <p>Deliver to</p>
+                    <div class="add-icon">
 
-  <!-- Deals/Grids Section -->
-  <section class="grid">
-    <div class="box">
-      <h3>Revamp your home in style</h3>
-      <img src="https://m.media-amazon.com/images/I/81bKjvKWT5L._AC_UL480_.jpg" alt="">
-      <a href="#">Explore all</a>
-    </div>
-    <div class="box">
-      <h3>Starting â‚¹149 | Headphones</h3>
-      <img src="https://m.media-amazon.com/images/I/51UuG6l-V-L._AC_UL480_.jpg" alt="">
-      <a href="#">See all offers</a>
-    </div>
-    <div class="box">
-      <h3>Appliances for your home</h3>
-      <img src="https://m.media-amazon.com/images/I/51-4iR4P6rL._AC_UL480_.jpg" alt="">
-      <a href="#">See more</a>
-    </div>
-    <div class="box">
-      <h3>Automotive Essentials</h3>
-      <img src="https://m.media-amazon.com/images/I/81ZuwJ3DZ2L._AC_UL480_.jpg" alt="">
-      <a href="#">See all deals</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-cols">
-      <div>
-        <h4>Get to Know Us</h4>
-        <p>About Amazon</p>
-        <p>Careers</p>
-        <p>Amazon Science</p>
-      </div>
-      <div>
-        <h4>Connect with Us</h4>
-        <p>Facebook</p>
-        <p>Twitter</p>
-        <p>Instagram</p>
-      </div>
-      <div>
-        <h4>Make Money with Us</h4>
-        <p>Sell on Amazon</p>
-        <p>Become an Affiliate</p>
-      </div>
-      <div>
-        <h4>Let Us Help You</h4>
-        <p>Your Account</p>
-        <p>Returns Centre</p>
-        <p>Help</p>
-      </div>
-    </div>
-    <p class="footer-bottom">&copy; 2025 Amazon.org</p>
-  </footer>
+                        <p>India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
